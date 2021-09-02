@@ -1,19 +1,19 @@
 function F = flowcapacity(G, perm, ind)
 % Calculates the normalized cumulative flow capacity of the well.
 % The normalized cumulative flow capacity is a method for characterizing
-% a well in a hydrocarbon reservoir, based on the stratigraphic modified
+% wells in a hydrocarbon reservoir, based on the stratigraphic modified
 % Lorenz plot. 
 % 
 % SYNOPSIS:
 %     ncfc = flowcapacity(G, rock.perm, ind)
 % 
 % PARAMETERS:
-%     G         - The struct containing the grid data.
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indeces.
+%     G         - struct containing the grid data.
+%     rock.perm - permeability field.
+%     ind       - well indeces.
 % 
 % RETURNS:
-%     ncfc - Array containing the normalized cumulative flow capacity of
+%     ncfc - array containing the normalized cumulative flow capacity of
 %            the well.
 %     
 % SEE ALSO:
@@ -25,8 +25,8 @@ function F = flowcapacity(G, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

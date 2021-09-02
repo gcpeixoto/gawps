@@ -1,21 +1,21 @@
 function nrqi = normalizedrqi(G, poro, perm, ind)
 % Calculates the normalized cumulative RQI.
-% The rock quality index (RQI) is simply the empirical relationship that
-% link porosity and permeability of a medium.
-% The normalized cumulative RQI is a method for characterizing a well in a
+% The rock quality index (RQI) is defined by the square root of the 
+% reservoir process speed.
+% The normalized cumulative RQI is a method for characterizing wells in a
 % hydrocarbon reservoir.
 % 
 % SYNOPSIS:
 %     nrqi = normalizedrqi(G, rock.poro, rock.perm, ind)
 % 
 % PARAMETERS:
-%     G         - The struct containing the grid data.
-%     rock.poro - The porosity of the reservoir.
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indices.
+%     G         - struct containing the grid data.
+%     rock.poro - porosity of the reservoir.
+%     rock.perm - permeability of the reservoir.
+%     ind       - well indices.
 % 
 % RETURNS:
-%     nrqi - Array containing the normalized cumulative RQI of the well.
+%     nrqi - array containing the normalized cumulative RQI of the well.
 %     
 % SEE ALSO:
 %     resmodel, winland, classiclorenz, stratigraphiclorenz,
@@ -26,8 +26,8 @@ function nrqi = normalizedrqi(G, poro, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

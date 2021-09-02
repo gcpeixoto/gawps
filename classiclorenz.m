@@ -1,19 +1,18 @@
 function [F, Lc] = classiclorenz(G, perm, ind)
 % Calculates the classic Lorenz plot of the well.
-% The Lorenz plot is a method for characterizing a well in a hydrocarbon
-% reservoir and identification of the level of heterogeneity.
+% The Lorenz plot identifies the level of heterogeneity over the well.
 % 
 % SYNOPSIS:
 %     [F, Lc] = classiclorenz(G, rock.perm, ind)
 % 
 % PARAMETERS:
-%     G         - The struct containing the grid data.
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indices.
+%     G         - struct containing the grid data.
+%     rock.perm - permeability field.
+%     ind       - well indices.
 % 
 % RETURNS:
 %     F  - Array containing the flow capacity of the well.
-%     Lc - The Lorenz coefficient.
+%     Lc - Lorenz coefficient.
 %     
 % SEE ALSO:
 %     resmodel, winland, stratigraphiclorenz, derivativesmlp,
@@ -24,8 +23,8 @@ function [F, Lc] = classiclorenz(G, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

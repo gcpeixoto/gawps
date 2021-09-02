@@ -1,21 +1,21 @@
 function [G, gw, rock, indw] = resmodel(coord, reserv)
 % Processes the reservoir model, returning the data of petrophysical
-% properties, grid and indices of the well under study.
+% properties, grid, and indices of the well under study.
 % 
 % SYNOPSIS:
 %     [G, gw, rock, indw] = resmodel(coord, reserv)
 % 
 % PARAMETERS:
-%     coord  - The coordinates of the wells under study.
-%     reserv - The name of the reservoir model ('SPE10', 'UNISIM1D',
-%              'UNISIM2D', 'Egg' or 'Norne'). 
+%     coord  - coordinates of the wells under study.
+%     reserv - name of the reservoir model. The current available options are: 
+%              'SPE10', 'UNISIM1D', 'UNISIM2D', 'Egg', and 'Norne'. 
 % 
 % RETURNS:
-%     G    - The struct containing the grid data.
-%     gw   - The struct containing the well grid data.
-%     rock - The struct containing the petrophysical properties of the
+%     G    - struct containing the grid data.
+%     gw   - struct containing the well grid data.
+%     rock - struct containing the petrophysical properties of the
 %            reservoir.
-%     indw - The array containing the indices of the well under study.
+%     indw - array containing the indices of the well under study.
 %     
 % SEE ALSO:
 %     winland, classiclorenz, stratigraphiclorenz, derivativesmlp,
@@ -26,8 +26,8 @@ function [G, gw, rock, indw] = resmodel(coord, reserv)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

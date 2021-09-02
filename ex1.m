@@ -5,8 +5,8 @@
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

@@ -1,20 +1,20 @@
 function [Ks, P, Vk] = dykstraparsons(perm, ind)
 % Calculates the log-normal permeability distribution plot of the well.
 % The log-normal permeability distribution plot is a method for
-% characterizing a well in a hydrocarbon reservoir and identification of
+% characterizing wells in a hydrocarbon reservoir and identifying
 % the level of heterogeneity. 
 % 
 % SYNOPSIS:
 %     [Ks, P, Vk] = dykstraparsons(perm, ind)
 % 
 % PARAMETERS:
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indices.
+%     rock.perm - permeability field.
+%     ind       - well indices.
 % 
 % RETURNS:
-%     Ks - Array containing the sample permeability.
-%     P  - Array containing the log-normal permeability distribution.
-%     Vk - The Dykstra-Parsons coefficient.
+%     Ks - array containing the sample permeability.
+%     P  - array containing the log-normal permeability distribution.
+%     Vk - Dykstra-Parsons coefficient.
 %     
 % SEE ALSO:
 %     resmodel, winland, classiclorenz, stratigraphiclorenz,
@@ -25,8 +25,8 @@ function [Ks, P, Vk] = dykstraparsons(perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

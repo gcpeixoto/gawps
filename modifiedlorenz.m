@@ -1,7 +1,7 @@
 function [S, F, FUS, categ] = modifiedlorenz(S, F, gw, indi, intv)
 % Plot the modified Lorenz plot of the well.
-% The modified Lorenz plot is a method for characterizing a well in a
-% hydrocarbon reservoir and sort the hydraulic flow units, based on the
+% The modified Lorenz plot is a method for characterizing wells in a
+% hydrocarbon reservoir. It sorts the hydraulic flow units based on the
 % stratigraphic modified Lorenz plot.
 % 
 % SYNOPSIS:
@@ -12,21 +12,21 @@ function [S, F, FUS, categ] = modifiedlorenz(S, F, gw, indi, intv)
 %     classification of the flow units of the your choice. 
 % 
 % PARAMETERS:
-%     S      - Array containing the storage capacity of the well
+%     S      - array containing the storage capacity of the well
 %              (respecting the stratigraphic sequence). 
-%     F      - Array containing the flow capacity of the well (respecting
+%     F      - array containing the flow capacity of the well (respecting
 %              the stratigraphic sequence). 
-%     gw     - The struct containing the well grid data.
-%     indi   - The inflection points of the stratigraphic modified
+%     gw     - struct containing the well grid data.
+%     indi   - inflection points of the stratigraphic modified
 %              Lorenz plot.
-%     intv  - Intervals for flow units classification (ex.: [0.1, 0.5, 1]).
+%     intv   - intervals for flow units classification (ex.: [0.1, 0.5, 1]).
 % 
 % RETURNS:
-%     S      - Array containing the storage capacity of the well (in order
+%     S      - array containing the storage capacity of the well (in order
 %              of FUS). 
-%     F      - Array containing the flow capacity of the well (in order of
+%     F      - array containing the flow capacity of the well (in order of
 %              FUS). 
-%     FUS    - Structure containing the values of flow unit speed:
+%     FUS    - structure containing the values of flow unit speed:
 %
 %              FUS.cells  - Array containing the flow unit speed of the
 %                           well. 
@@ -34,7 +34,7 @@ function [S, F, FUS, categ] = modifiedlorenz(S, F, gw, indi, intv)
 %                           flow units
 %              FUS.ind    - Array containing the indices of the flow units.
 %
-%     categ  - Structure containing the classification of the flow unit:
+%     categ  - structure containing the classification of the flow unit:
 %
 %              categ.cells - Array containing the flow unit speed of the
 %                            well. 
@@ -50,8 +50,8 @@ function [S, F, FUS, categ] = modifiedlorenz(S, F, gw, indi, intv)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

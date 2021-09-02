@@ -1,10 +1,10 @@
 function fzi = normalprobability(poro, perm, ind)
-% Calculates the histogram and normal probability plot of the well.
-% The flow zone indicator (FZI) is is a index based on pore throat,
-% tortuosity, and effective area based on texture properties, sedimentation
-% model, pore geometry, and digenesis effects.
+% Calculates the histogram and normal probability plot of the well
+% by overloading MATLAB's pre-built functions. 
+% The flow zone indicator (FZI) is a quantity that aggregates medium's 
+% properties, such as pore tortuosity, Kozeny's constant and grain surface area.
 % The histogram and normal probability plot are methods for characterizing
-% a well in a hydrocarbon reservoir. 
+% wells in a hydrocarbon reservoir. 
 % 
 % SYNOPSIS:
 %     fzi = normalprobability(rock.poro, rock.perm, ind)
@@ -25,8 +25,8 @@ function fzi = normalprobability(poro, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

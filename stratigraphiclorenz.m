@@ -1,21 +1,20 @@
 function [S, F] = stratigraphiclorenz(G, poro, perm, ind)
-% Plot the stratigraphic modified Lorenz plot of the well.
+% Plots the stratigraphic modified Lorenz plot of the well.
 % The stratigraphic modified Lorenz plot is a method for characterizing
-% a well in a hydrocarbon reservoir and identification of hydraulic flow
-% units.
+% wells in a hydrocarbon reservoir and identifying hydraulic flow units.
 % 
 % SYNOPSIS:
 %     [S, F] = stratigraphiclorenz(G, rock.poro, rock.perm, ind)
 % 
 % PARAMETERS:
-%     G         - The struct containing the grid data.
-%     rock.poro - The porosity of the reservoir.
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indices.
+%     G         - struct containing the grid data.
+%     rock.poro - porosity of the reservoir.
+%     rock.perm - permeability of the reservoir.
+%     ind       - well indices.
 % 
 % RETURNS:
-%     S - Array containing the storage capacity of the well.
-%     F - Array containing the flow capacity of the well.
+%     S - array containing the storage capacity of the well.
+%     F - array containing the flow capacity of the well.
 %     
 % SEE ALSO:
 %     winland, classiclorenz, modifiedlorenz, flowcapacity,
@@ -25,8 +24,8 @@ function [S, F] = stratigraphiclorenz(G, poro, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

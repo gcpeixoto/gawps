@@ -1,18 +1,18 @@
 function wp = winland(poro, perm, ind)
 % Calculates the Winland plot of the well.
-% The Winland plot is a method for characterizing a well in a hydrocarbon
-% reservoir and rock typing.
+% The Winland plot is a method for characterizing wells in a hydrocarbon
+% reservoir and carryin out rock typing.
 % 
 % SYNOPSIS:
 %     wp = winland(rock.poro, rock.perm, ind)
 % 
 % PARAMETERS:
-%     rock.poro - The porosity of the reservoir.
-%     rock.perm - The permeability of the reservoir.
-%     ind       - The well indices.
+%     rock.poro - porosity field.
+%     rock.perm - permeability field.
+%     ind       - well indices.
 % 
 % RETURNS:
-%     wp - Array containing data from the winland plot.
+%     wp - array containing data from the winland plot.
 %     
 % SEE ALSO:
 %     classiclorenz, stratigraphiclorenz, modifiedlorenz, flowcapacity,
@@ -22,8 +22,8 @@ function wp = winland(poro, perm, ind)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 

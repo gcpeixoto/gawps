@@ -5,25 +5,25 @@ function [df, indi] = derivativesmlp(G, S, F, ind, numb)
 % flow units.
 % 
 % SYNOPSIS:
-%     [df, indi] = derivativesmlp(G, S, F, ind, numb) use the
-%     classification of the authors of the flow units.
+%     [df, indi] = derivativesmlp(G, S, F, ind, numb) uses the
+%     classification of the authors for flow units.
 %
-%     [df, indi] = derivativesmlp(G, S, F, ind, numb, intv) use the
-%     classification of the flow units of the your choice.  
+%     [df, indi] = derivativesmlp(G, S, F, ind, numb, intv) uses the
+%     classification of your choice.  
 % 
 % PARAMETERS:
-%     G     - The struct containing the grid data.
-%     S     - Array containing the storage capacity of the well
+%     G     - struct containing the grid data.
+%     S     - array containing the storage capacity of the well
 %             (respecting the stratigraphic sequence). 
-%     F     - Array containing the flow capacity of the well (respecting
+%     F     - array containing the flow capacity of the well (respecting
 %             the stratigraphic sequence).
-%     ind   - The well indices.
-%     numb  - Number of partitions.
-%     intv  - Intervals for flow units classification (ex.: [0.1, 0.5, 1]).
+%     ind   - well indices.
+%     numb  - number of partitions.
+%     intv  - intervals for flow units classification (ex.: [0.1, 0.5, 1]).
 % 
 % RETURNS:
-%     df   - Array containing the slopes obtained.
-%     indi - The inflection points of the plot. 
+%     df   - array containing the slopes obtained.
+%     indi - inflection points of the plot. 
 %     
 % SEE ALSO:
 %     resmodel, winland, classiclorenz, stratigraphiclorenz,
@@ -34,8 +34,8 @@ function [df, indi] = derivativesmlp(G, S, F, ind, numb)
 UFPB - Federal University of Paraiba
 LAMEP - Petroleum Engineering Modelling Laboratory
 
-Dr. Gustavo Charles Peixoto de Oliveira
 Thiago Ney Evaristo Rodrigues
+Dr. Gustavo Charles Peixoto de Oliveira
 
 This file is part of the tool GAWPS.
 
