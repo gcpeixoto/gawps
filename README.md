@@ -12,7 +12,7 @@ GAWPS was incepted to be an add-on module for the Matlab Reservoir Simulation To
 ## Dependencies
 
 - MRST core module
-- Mathworks MATLAB core and _Statistics and Machine Learning Toolbox
+- Mathworks MATLAB core and _Statistics and Machine Learning Toolbox_
 
 
 ## Authorship
